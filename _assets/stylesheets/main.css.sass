@@ -1,0 +1,45 @@
+@import "compass"
+
++font-face("Roboto", inline-font-files("Roboto-Regular.woff", woff))
+
+html
+  @include background(radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)))
+  height: 100%
+  font-family: Roboto, arial, sans-serif
+  -webkit-font-smoothing: antialiased
+
+body
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  margin: auto
+  height: 80px
+  text-align: center
+
+.hangout-button
+  display: inline-block
+  text-decoration: none
+  background: #53A93F
+  font-size: 30px
+  padding: 20px 30px
+  color: #fff
+  position: relative
+  top: -50%
+  @include box-shadow(0 1px 1px rgba(0,0,0,0.7))
+
+  &:hover
+    background: lighten(#53A93F, 1%)
+
+  &:active
+    background: darken(#53A93F, 1%)
+
+  svg
+    fill: rgba(255,255,255,0.9)
+    display: inline-block
+    vertical-align: middle
+    height: 18px
+    width: 50px
+    margin-top: -5px
+    margin-right: 15px

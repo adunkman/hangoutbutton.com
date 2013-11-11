@@ -1,0 +1,12 @@
+future: false
+permalink: /:categories/:title.html
+markdown: redcarpet
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "smart"]
+
+assets:
+  gzip: false
+
+lsi: false
+pygments: true
