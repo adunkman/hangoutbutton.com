@@ -14,11 +14,12 @@ body
   right: 0
   left: 0
   bottom: 0
+  height: 0
   margin: auto
-  height: 80px
   text-align: center
 
 .hangout-button
+  box-sizing: border-box
   display: inline-block
   text-decoration: none
   background: #53A93F
@@ -26,7 +27,7 @@ body
   padding: 20px 20px
   color: #fff
   position: relative
-  top: -50%
+  top: -33px
   @include border-radius(3px)
   @include box-shadow(0 1px 1px rgba(0,0,0,0.7))
 
@@ -46,9 +47,13 @@ body
     margin-right: 10px
 
 @media screen and (min-width: 36em)
+  body
+    //height: 80px
+
   .hangout-button
     font-size: 30px
     padding: 20px 30px
+    top: -40px
 
     svg
       height: 18px
